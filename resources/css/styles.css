@@ -5,3 +5,64 @@
   background-blend-mode: multiply;
   background-size: cover;
 }
+
+body {
+  /* margin: 0 auto; */
+  background-color: rgb(233, 233, 233);
+  font-family: Roboto, 'Times New Roman';
+}
+
+header {
+  /* height: 50px; */
+}
+
+nav.nav-container {
+  max-width: 1000px;
+  display: flex;
+}
+
+ul.nav-list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 525px) { /* @media has to go below */
+  nav ul.nav-list {
+    flex: 1 1 250px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+  nav div.nav-spacer {
+    flex: 7.5 1;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  nav ul.nav-list {
+    padding-left: 15px;
+    display: block;
+  }
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+a.nav-link:hover {
+  color: rgb(26, 177, 26);
+}
+
+a.nav-link.active {
+  text-decoration: underline;
+}
+
+
+
